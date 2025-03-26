@@ -1,0 +1,39 @@
+{
+  "name": "keymappjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "src/keymapp.proto"
+  ],
+  "version": "1.0.5",
+  "description": "A typescript library for the zsa keyboards Keymapp API ",
+  "author": "Ahhh_Saturn (Saturn Maoudis)",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.3.0"
+  },
+  "scripts": {
+    "build": "bun run build.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.0",
+    "@grpc/proto-loader": "^0.7.13"
+  },
+  "trustedDependencies": [
+    "protobufjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhhhSaturn/KeymappJs"
+  }
+}
